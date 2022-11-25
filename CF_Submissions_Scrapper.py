@@ -224,6 +224,11 @@ def save_to_csv(trainees):
 
 # main function
 def main():
+    
+    #Get the directory of current folder
+    directory = os.path.dirname(os.path.realpath(__file__))
+    os.chdir(directory)
+    
     print(f'{colors.magenta}Starting the program... {colors.reset}')
     
     # getting trainees data
